@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-serve": "^1.2.0",
     "gulp-svgstore": "^5.0.5"
   },
   "scripts": {

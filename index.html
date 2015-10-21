@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>SVG со стилем</title>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 	<style>
 		.tail {
 			fill: orange;
@@ -27,35 +29,12 @@
 	</style>
 </head>
 <body>
-	
-	<script>
-var embedSvg = function () {
-            var $iconsLink = $("link[rel=svg-icons]");
-            if($iconsLink.length != 1) {
-                throw "SVG icons are not linked";
-            }
-            $.get($iconsLink.attr("href")).done(function(content) {
-                document.body.appendChild(content.childNodes[1]);
-            });
-        }
-        //embedSvg();
-
-			$.get("icons.svg").done(function(content) {
-                document.body.appendChild(content.childNodes[1]);
-            });
-	</script>
-	<h4>Просто котик</h4>
-	<svg width="80px" height="80px">
-		<use xlink:href="#kotik"></use>
-	</svg>
-
-	<h4>Котик с оранжевым хвостом</h4>
-
-	<svg width="80px" height="80px">
-		<use xlink:href="#kotik"></use>
-	</svg>
-
-
-
+	<ul>
+		<li><a href="samples\justcat.html">Просто котик</a></li>
+		<li><a href="samples\orange-tail.html">Котик с оранжевым хвостом</a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
 </body>
 </html>
