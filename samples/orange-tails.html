@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Просто котик</title>
+	<title>Оранжевохвостые коты</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="svg-icons" href="../dist/icons.svg">
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="../svg-loader.js"></script>
@@ -14,7 +15,10 @@
 </head>
 <body>
 	
-	<h4>Все коты с оранжевыми хвостами</h4>
+	<ol class="breadcrumb">
+	  <li><a href="../">К началу</a></li>
+	  <li class="active">Оранжевохвостые коты</li>
+	</ol>
 	<div>Стиль применяется к шаблону; соответственно, все инстансы этого шаблона тоже с оранжевыми хвостами</div>
 	<svg width="80px" height="80px">
 		<use xlink:href="#kotik"></use>
