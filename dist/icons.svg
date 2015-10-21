@@ -23,7 +23,7 @@
         </g>
         <ellipse fill="#fff" stroke="black" class="body" ry="55.5" rx="107.5" cy="221" cx="248"/>
         <ellipse fill="#fff" stroke="black" class="tail" ry="76" rx="8.5" cy="128.5" cx="353"/>
-        <g class="legs" fill="darkgray">
+        <g class="legs" fill="darkgray"> 
             <ellipse ry="54.5" rx="7.5" cy="290" cx="153"/>
             <ellipse ry="58" rx="9.5" cy="309.5" cx="190"/>
             <ellipse ry="48" rx="10" cy="291.5" cx="311.5"/>
@@ -33,5 +33,8 @@
         <circle class="eye" r="8" cx="134.5" cy="94.5" fill="darkgreen"/>
         <circle class="eye" r="8" cx="171.5" cy="94.5" fill="darkgreen"/>
         <ellipse class="nose" ry="5.5" rx="5.5" cy="118" cx="153" fill="grey"/>
-
+        <g class="checkmark" visibility="currentColor">
+          <line y2="250" x2="270" y1="194.5" x1="234.5" stroke-width="3" stroke="#000" fill="none"/>
+          <line y2="250" x2="270" y1="170.5" x1="314.5" stroke-width="3" stroke="#000" fill="none"/>
+        </g>
     </symbol></svg>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Выбери кота</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="svg-icons" href="../dist/icons.svg">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../svg-loader.js"></script>
+    <style>
+    .checkmark line {
+        stroke: currentColor;
+    }
+    
+    svg use {
+        color: transparent;
+    }
+    
+    li.selected use {
+        color: darkred;
+    }   
+
+    li {
+    	cursor: pointer;
+    } 
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("li").on("click", function(ev) {
+            $(ev.currentTarget).toggleClass("selected");
+        });
+    })
+    </script>
+</head>
+
+<body>
+	<ol class="breadcrumb">
+	  <li><a href="../">К началу</a></li>
+	  <li class="active">Выбери кота</li>
+	</ol>
+    <div>Управляем показом опеределенных элементов при помощи трюка с CSS-переменной <code>currentColor</code> и установкой цвета элементов в <code>transparent</code></div>
+    <ul class="list-unstyled">
+        <li class="selected" >
+            <svg width="160px" height="160px">
+                <use xlink:href="#kotik"></use>
+            </svg>
+        </li>
+        <li>
+            <svg width="160px" height="160px">
+                <use xlink:href="#kotik"></use>
+            </svg>
+        </li>
+        <li>
+            <svg width="160px" height="160px">
+                <use xlink:href="#kotik"></use>
+            </svg>
+        </li>
+</body>
+
+</html>
