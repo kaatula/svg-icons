@@ -8,7 +8,7 @@
     <link rel="svg-icons" href="../dist/icons.svg">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="../svg-loader.js"></script>
-    <style>
+    <style id="catstyles">
     .eye {
         fill: inherit;
     }
@@ -57,16 +57,18 @@
         <li><a href="../">К началу</a></li>
         <li class="active">Мэйн-кун - это тема</li>
     </ol>
-    <div>Мы можем полностью темировать иконку в зависимости от подключенной к документу CSS со стилями. В то же время, возможность стилизации отдельных элементов остаётся.</div>
-    <svg width="160px" height="160px">
-        <use xlink:href="#kotik"></use>
-    </svg>
-    <svg width="160px" height="160px">
-        <use xlink:href="#kotik"></use>
-    </svg>
-    <svg width="160px" height="160px">
-        <use xlink:href="#kotik"></use>
-    </svg>
+    <div id="panel">
+        <div>Мы можем полностью темировать иконку в зависимости от подключенной к документу CSS со стилями. В то же время, возможность стилизации отдельных элементов остаётся.</div>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+    </div>
 </body>
 
 </html>

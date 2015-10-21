@@ -8,18 +8,18 @@
     <link rel="svg-icons" href="../dist/icons.svg">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="../svg-loader.js"></script>
-    <style>
-	.eye {
-		fill: inherit;
-	}
-
+    <style id="catstyles">
+    .eye {
+        fill: inherit;
+    }
+    
     svg use {
         fill: red;
     }
     
     svg:hover use {
         fill: darkgreen;
-    }   
+    }
     </style>
     <script>
     $(document).ready(function() {
@@ -31,20 +31,23 @@
 </head>
 
 <body>
-	<ol class="breadcrumb">
-	  <li><a href="../">К началу</a></li>
-	  <li class="active">Погладь кота!</li>
-	</ol>
-    <div>Подсвечиваем элементы изображения на псевдоэлементе <code>:hover</code></div>
-            <svg width="160px" height="160px">
-                <use xlink:href="#kotik"></use>
-            </svg>
-            <svg width="160px" height="160px">
-                <use xlink:href="#kotik"></use>
-            </svg>
-            <svg width="160px" height="160px">
-                <use xlink:href="#kotik"></use>
-            </svg>
-</body>
+    <ol class="breadcrumb">
+        <li><a href="../">К началу</a></li>
+        <li class="active">Погладь кота!</li>
+    </ol>
 
+    <div id="panel">
+        <div>Подсвечиваем элементы изображения на псевдоэлементе <code>:hover</code></div>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+    </div>
+
+</body>
 </html>

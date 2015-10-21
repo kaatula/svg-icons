@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Оранжевохвостые коты</title>
+    <meta charset="UTF-8">
+    <title>Оранжевохвостые коты</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="svg-icons" href="../dist/icons.svg">
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="../svg-loader.js"></script>
-	<style>
-		.tail {
-			fill: orange;
-		}
-	</style>
+    <link rel="svg-icons" href="../dist/icons.svg">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../svg-loader.js"></script>
+    <style id="catstyles">
+    .tail {
+        fill: orange;
+    }
+    </style>
 </head>
+
 <body>
-	
-	<ol class="breadcrumb">
-	  <li><a href="../">К началу</a></li>
-	  <li class="active">Оранжевохвостые коты</li>
-	</ol>
-	<div>Стиль применяется к шаблону; соответственно, все инстансы этого шаблона тоже с оранжевыми хвостами</div>
-	<svg width="80px" height="80px">
-		<use xlink:href="#kotik"></use>
-	</svg>
-	<svg width="160px" height="160px">
-		<use xlink:href="#kotik"></use>
-	</svg>
-	<svg width="240px" height="240px">
-		<use xlink:href="#kotik"></use>
-	</svg>
+    <ol class="breadcrumb">
+        <li><a href="../">К началу</a></li>
+        <li class="active">Оранжевохвостые коты</li>
+    </ol>
+    <div id="panel">
+        <div>Стиль применяется к шаблону; соответственно, все инстансы этого шаблона тоже с оранжевыми хвостами</div>
+        <svg width="80px" height="80px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+        <svg width="240px" height="240px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+    </div>
 </body>
+
 </html>
