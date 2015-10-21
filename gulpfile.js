@@ -11,7 +11,7 @@ gulp.task("concat_icons", function () {
     return gulp
         .src("./icons/**/*.svg")
         .pipe(svgstore())
-        .pipe(gulp.dest("."));
+        .pipe(gulp.dest("dist"));
 });
 
 
