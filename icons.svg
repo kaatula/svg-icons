@@ -21,8 +21,8 @@
             <line y2="144.5" x2="18.5" y1="149.5" x1="129.5" stroke-width="1.5" stroke="#000" fill="none"/>
             <line y2="156.5" x2="17.5" y1="177.5" x1="127.5" stroke-width="1.5" stroke="#000" fill="none"/>
         </g>
-        <ellipse class="body" ry="55.5" rx="107.5" cy="221" cx="248"/>
-        <ellipse class="tail" ry="76" rx="8.5" cy="128.5" cx="353"/>
+        <ellipse fill="#fff" stroke="black" class="body" ry="55.5" rx="107.5" cy="221" cx="248"/>
+        <ellipse fill="#fff" stroke="black" class="tail" ry="76" rx="8.5" cy="128.5" cx="353"/>
         <g>
             <ellipse ry="54.5" rx="7.5" cy="290" cx="153"/>
             <ellipse ry="58" rx="9.5" cy="309.5" cx="190"/>
