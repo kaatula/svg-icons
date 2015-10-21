@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Погладь кота!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="svg-icons" href="../dist/icons.svg">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../svg-loader.js"></script>
+    <style>
+	.eye {
+		fill: inherit;
+	}
+
+    svg use {
+        fill: red;
+    }
+    
+    svg:hover use {
+        fill: darkgreen;
+    }   
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("li").on("click", function(ev) {
+            $(ev.currentTarget).toggleClass("selected");
+        });
+    })
+    </script>
+</head>
+
+<body>
+	<ol class="breadcrumb">
+	  <li><a href="../">К началу</a></li>
+	  <li class="active">Погладь кота!</li>
+	</ol>
+    <div>Подсвечиваем элементы изображения на псевдоэлементе <code>:hover</code></div>
+            <svg width="160px" height="160px">
+                <use xlink:href="#kotik"></use>
+            </svg>
+            <svg width="160px" height="160px">
+                <use xlink:href="#kotik"></use>
+            </svg>
+            <svg width="160px" height="160px">
+                <use xlink:href="#kotik"></use>
+            </svg>
+</body>
+
+</html>
