@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мэйн-кун - это тема</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="svg-icons" href="../dist/icons.svg">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../svg-loader.js"></script>
+    <style>
+    .eye {
+        fill: inherit;
+    }
+    
+    .body {
+        fill: #D5995D;
+    }
+    
+    .legs {
+        fill: #D0A36A;
+        stroke: black;
+        stroke-width: 1px;
+    }
+    
+    .tail {
+        fill: #944618;
+    }
+    
+    .face {
+        fill: #CCA681;
+    }
+    
+    .ear {
+        fill: #CF9855;
+    }
+    
+    svg use {
+        fill: #673A25;
+    }
+    
+    svg:hover use {
+        fill: darkgreen;
+    }
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("li").on("click", function(ev) {
+            $(ev.currentTarget).toggleClass("selected");
+        });
+    })
+    </script>
+</head>
+
+<body>
+    <ol class="breadcrumb">
+        <li><a href="../">К началу</a></li>
+        <li class="active">Мэйн-кун - это тема</li>
+    </ol>
+    <div>Мы можем полностью темировать иконку в зависимости от подключенной к документу CSS со стилями. В то же время, возможность стилизации отдельных элементов остаётся.</div>
+    <svg width="160px" height="160px">
+        <use xlink:href="#kotik"></use>
+    </svg>
+    <svg width="160px" height="160px">
+        <use xlink:href="#kotik"></use>
+    </svg>
+    <svg width="160px" height="160px">
+        <use xlink:href="#kotik"></use>
+    </svg>
+</body>
+
+</html>
