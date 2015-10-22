@@ -14,16 +14,16 @@
         fill: inherit;
     }
     
-    svg:first-of-type use {
-        fill: darkred;
+    #barsik use {
+        fill: orangered;
     }
     
-    svg:nth-of-type(2) use {
-        fill: lightblue;
+    #mashka use {
+        fill: darkgray;
     }
     
-    svg:nth-of-type(3) use {
-        fill: thistle;
+    #vaska use {
+        fill: whitesmoke;
     }
     </style>
 </head>
@@ -35,13 +35,13 @@
     </ol>
     <div id="panel">
         <div>Однозначно указываем для хвоста, что он должен игнорировать своё дефолтное значение и взять его у своих родительских элементов (<code>.tail { fill: inherit; }</code></div>
-        <svg width="80px" height="80px">
+        <svg id="barsik" width="200px" height="200px">
             <use xlink:href="#kotik"></use>
         </svg>
-        <svg width="160px" height="160px">
+        <svg id="mashka" width="160px" height="160px">
             <use xlink:href="#kotik"></use>
         </svg>
-        <svg width="240px" height="240px">
+        <svg id="vaska" width="240px" height="240px">
             <use xlink:href="#kotik"></use>
         </svg>
     </div>
