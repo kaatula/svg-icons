@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <circle fill="green" cx="200" cy="200" r="30"></circle>
+        <g fill="darkblue">
+            <circle cx="100" cy="100" r="25"></circle>
+            <circle cx="300" cy="100" r="25"></circle>
+        </g>
+        <g fill="orangered">
+            <ellipse fill="violet" cx="200" cy="300" rx="200" ry="25"/>
+        </g>
+    </svg>
