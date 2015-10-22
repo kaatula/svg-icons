@@ -1,10 +1,14 @@
-var embedSvg = function () {
+var embedSvg = function() {
     var $iconsLink = $("link[rel=svg-icons]");
-    if($iconsLink.length != 1) {
+    if ($iconsLink.length != 1) {
         throw "SVG icons are not linked";
     }
-    return $.get($iconsLink.attr("href")).done(function(content) {
-        document.body.appendChild(content.childNodes[1]);
+    $.when($.get($iconsLink.attr("href")), $.ready).done(function(results) {
+        var div = document.createElement("div");
+        div.style.display = "none";
+        div.innerHTML = new XMLSerializer().serializeToString(results[0].documentElement);
+        document.body.insertBefore(div, document.body.childNodes[0]);
+
     });
 }
 
