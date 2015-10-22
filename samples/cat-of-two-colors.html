@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Кошка о двух цветах</title>
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+    <script src="../vendor/jquery.min.js"></script>
+    <link rel="svg-icons" href="../dist/icons.svg">
+    <script src="../svg-loader.js"></script>
+    <script src="../jsfiddle-sender.js"></script>
+    <style id="catstyles">
+
+    .tail {
+        fill: inherit;
+    }
+
+    .body {
+        fill: currentColor;
+    }
+    
+    svg use {
+        fill: brown;
+        color: orange;
+    }
+    
+    svg:hover use {
+        fill: orange;
+        color: brown;
+    }
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("li").on("click", function(ev) {
+            $(ev.currentTarget).toggleClass("selected");
+        });
+    })
+    </script>
+</head>
+
+<body>
+    <ol class="breadcrumb">
+        <li><a href="../">К началу</a></li>
+        <li class="active">Погладь кота!</li>
+    </ol>
+
+    <div id="panel">
+        <div>Использование CSS-переменной <code>currentColor</code>, единственной в своём роде, даёт нам возможность кастомизировать два цвета для экзепляров иконки.</div>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+        <svg width="160px" height="160px">
+            <use xlink:href="#kotik"></use>
+        </svg>
+    </div>
+
+</body>
+</html>
