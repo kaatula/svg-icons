@@ -1,14 +1,6 @@
 <?xml version="1.0"?>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
         <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-        <g>
-            <title>background</title>
-            <rect fill="#fff" id="canvas_background" height="402" width="402" y="-1" x="-1" />
-            <g display="none" id="canvasGrid">
-                <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" id="svg_7" />
-            </g>
-        </g>
-        <title>Layer 1</title>
         <ellipse class="face" ry="55" rx="55" cy="120.5" cx="154.5" stroke-width="1.5" stroke="#000" fill="#fff" />
         <ellipse class="ear" ry="21.5" rx="11" cy="58" cx="116.5" stroke-width="1.5" stroke="#000" fill="#fff" />
         <ellipse class="ear" ry="22.5" rx="5.5" cy="53" cx="189" stroke-width="1.5" stroke="#000" fill="#fff" />
