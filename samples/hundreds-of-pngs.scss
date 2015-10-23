@@ -1,0 +1,12 @@
+$iconSize: 60px;
+
+@for $i from 1 through 500 {
+  .cool-icon-#{$i} {
+  	background-image: url("../icons/png/coolicon#{$i}.png"); 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: $iconSize;
+	height: $iconSize;
+	width: $iconSize;
+   }
+}
