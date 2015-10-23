@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Кот в нокауте</title>
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+    <link rel="svg-icons" href="../dist/icons.svg">
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/knockout.js"></script>
+    <script src="../svg-loader.js"></script>
+    <script src="../jsfiddle-sender.js"></script>
+    <style id="catstyles">
+    .tail {
+        fill: inherit;
+    }
+    
+    div.cats>div:nth-of-type(3n) use {
+        fill: green;
+    }
+    
+    div.cats>div:nth-of-type(3n+1) use {
+        fill: orange;
+    }
+    
+    div.cats>div:nth-of-type(3n+2) use {
+        fill: darkblue;
+    }
+    </style>
+    <script id="catscripts">
+    ko.bindingHandlers.xlinkHref = {
+        update: function(element, valueAccessor, allBindingsAccessor, viewModel) {
+            element.setAttributeNS('http://www.w3.org/1999/xlink', 'href', valueAccessor());
+        }
+    };
+
+    $(document).ready(function() {
+        var catCount = 500;
+        var viewModel = {
+            cats: ["vaska", "mashka", "barsik", "shanya"],
+            template: "#kotik"
+        }
+        for(var i=0;i<catCount;i++) {
+            viewModel.cats.push("cat-warrior #" + i.toString())
+        }
+
+        ko.applyBindings(viewModel);
+
+    });
+    </script>
+</head>
+
+<body>
+    <ol class="breadcrumb">
+        <li><a href="../">К началу</a></li>
+        <li class="active">Кот в нокауте</li>
+    </ol>
+    <div id="panel">
+        <div>Биндинг элементов <code>svg use</code> посредством библиотеки <code>Knockout</code></div>
+        <div class="cats" data-bind="foreach: cats">
+            <div>
+                <span data-bind="text: $data"></span>
+                <svg>
+                    <use data-bind="xlinkHref: $root.template">
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
