@@ -10,7 +10,9 @@ gulp.task("default", ["concat_icons"], function () {
 gulp.task("concat_icons", function () {
     return gulp
         .src("./icons/**/*.svg")
-        .pipe(svgstore())
+        .pipe(svgstore({
+            inlineSvg: true
+        }))
         .pipe(gulp.dest("dist"));
 });
 
