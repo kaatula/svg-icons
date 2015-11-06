@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg"><symbol id="kotik" viewBox="0 0 400 400">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="animation">
+
+    <rect x="10" y="10" height="110" width="110">
+
+        <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="0 60 60" to="360 60 60" repeatCount="indefinite"/>
+    </rect>
+
+</symbol><symbol id="kotik" viewBox="0 0 400 400">
         <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
         <ellipse class="face" ry="55" rx="55" cy="120.5" cx="154.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
         <ellipse class="ear" ry="21.5" rx="11" cy="58" cx="116.5" stroke-width="1.5" stroke="#000" fill="#fff"/>

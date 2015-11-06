@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Анимация</title>
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+    <link rel="svg-icons" href="../dist/icons.svg">
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../svg-loader.js"></script>
+    <script src="../jsfiddle-sender.js"></script>
+    <style id="catstyles">
+    use {
+        fill: orange;
+        stroke: green;
+    }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <ol class="breadcrumb">
+            <li><a href="../">К началу</a></li>
+            <li class="active">Анимация</li>
+        </ol>
+        <div id="panel">
+            <div><a href="../icons/animation.svg">Анимация</a> в иконке. Наблюдаются проблемы с некоторыми браузерами (в частности, MS Edge/IE)</div>
+            <svg height="340px">
+                <use xlink:href="#animation"></use>
+            </svg>
+        </div>
+    </body>
+
+</html>
